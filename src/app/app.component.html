@@ -16,9 +16,11 @@
 </form>
 
 <div  class="ui grid posts">
-    <div *ngFor="let article of articles">
-      <app-article [article]="article"></app-article>
-    </div>
+  <app-article
+    *ngFor="let article of articles"
+    [article]="article">
+  </app-article>
+
 </div>
 
 
